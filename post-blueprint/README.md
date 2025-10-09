@@ -9,11 +9,12 @@
 This project uses `uv` for dependency management. To install `uv`, follow the instructions at:
 https://docs.astral.sh/uv/getting-started/installation/#github-releases
 
-### Dependencies
+### Environment Setup
 
-Install dependencies:
+Create a virtual environment and install dependencies:
 
 ```bash
+uv venv --python 3.13
 uv pip install -r requirements.txt
 ```
 
@@ -22,10 +23,10 @@ uv pip install -r requirements.txt
 Execute the main script:
 
 ```bash
-uv run --python 3.12 main.py
+uv run main.py
 ```
 
 ## Requirements
 
-- Python 3.12
+- Python 3.13
 - Dependencies listed in `requirements.txt`
