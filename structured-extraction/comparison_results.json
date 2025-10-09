@@ -1,0 +1,241 @@
+[
+  {
+    "model_id": "openai/gpt-oss-20b",
+    "model_name": "GPT-OSS 20B",
+    "success": true,
+    "extraction": {
+      "name": "IBM Personal Computer Model 5150",
+      "summary": "IBM PC 5150, launched 1981, Intel 8088, 16KB RAM, open architecture, 5 slots, CGA, 5.25\" floppy, set standard for PC industry.",
+      "keywords": [
+        "IBM PC",
+        "Intel 8088",
+        "CGA graphics",
+        "open architecture",
+        "clones",
+        "floppy drive",
+        "1981"
+      ],
+      "category": "Personal Computer",
+      "identification_number": "IBM-PC-5150-SYS-001-1981-US",
+      "year_start": 1981,
+      "year_end": 1987,
+      "tables": [
+        {
+          "title": "Event Timeline",
+          "data": [
+            {
+              "Event": "Initial Release",
+              "Date": "August",
+              "Year": "1981"
+            },
+            {
+              "Event": "Peak Sales Period",
+              "Date": null,
+              "Year": "1982-1984"
+            },
+            {
+              "Event": "Final Units Shipped",
+              "Date": "April",
+              "Year": "1987"
+            },
+            {
+              "Event": "Official Discontinuation",
+              "Date": null,
+              "Year": "1987"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model_id": "openai/gpt-oss-120b",
+    "model_name": "GPT-OSS 120B",
+    "success": true,
+    "extraction": {
+      "category": "Computer",
+      "identification_number": "IBM-PC-5150-SYS-001-1981-US",
+      "keywords": [
+        "IBM PC",
+        "model 5150",
+        "Intel 8088",
+        "1981",
+        "personal computer",
+        "PC compatible"
+      ],
+      "name": "IBM Personal Computer 5150",
+      "summary": "The IBM Personal Computer model 5150, launched in 1981, featured an Intel 8088 CPU, 16\u202fKB RAM, five expansion slots and CGA graphics, setting the PC standard and spawning a clone market.",
+      "tables": [
+        {
+          "title": "IBM 5150 Timeline",
+          "data": [
+            {
+              "Event": "Initial Release",
+              "Date": "August",
+              "Year": "1981"
+            },
+            {
+              "Event": "Peak Sales Period",
+              "Date": "",
+              "Year": "1982-1984"
+            },
+            {
+              "Event": "Final Units Shipped",
+              "Date": "April",
+              "Year": "1987"
+            },
+            {
+              "Event": "Official Discontinuation",
+              "Date": "",
+              "Year": "1987"
+            }
+          ]
+        }
+      ],
+      "year_start": 1981,
+      "year_end": 1987
+    }
+  },
+  {
+    "model_id": "moonshotai/kimi-k2-instruct-0905",
+    "model_name": "Kimi K2 Instruct",
+    "success": true,
+    "extraction": {
+      "name": "IBM Personal Computer 5150",
+      "summary": "The IBM Personal Computer model 5150, launched in August 1981, transformed the computing landscape with its open-architecture Intel 8088-based design running at 4.77 MHz. Starting with 16 KB of expandable RAM, five expansion slots, CGA graphics and optional 5.25-inch floppy drives, the beige modular system encouraged third-party hardware and software, exceeded projected 250,000-unit sales within a year, and established enduring PC standards while competing against the entrenched Apple II.",
+      "keywords": [
+        "IBM 5150",
+        "personal computer",
+        "open architecture",
+        "Intel 8088",
+        "PC expansion bus"
+      ],
+      "category": "Computing Hardware",
+      "identification_number": "IBM-PC-5150-SYS-001-1981-US",
+      "year_start": 1981,
+      "year_end": 1987,
+      "tables": [
+        {
+          "title": "Key Events",
+          "data": [
+            {
+              "Event": "Initial Release",
+              "Date": "August",
+              "Year": 1981
+            },
+            {
+              "Event": "Peak Sales Period",
+              "Date": "",
+              "Year": "1982-1984"
+            },
+            {
+              "Event": "Final Units Shipped",
+              "Date": "April",
+              "Year": 1987
+            },
+            {
+              "Event": "Official Discontinuation",
+              "Date": "",
+              "Year": 1987
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "model_name": "Llama 4 Maverick",
+    "success": true,
+    "extraction": {
+      "name": "IBM Personal Computer",
+      "summary": "The IBM Personal Computer, model 5150, was a groundbreaking machine that revolutionized the computing industry with its open architecture, Intel 8088 processor, and modular design, making it accessible to businesses and enthusiasts alike, and establishing standards that persist in modern computing.",
+      "keywords": [
+        "IBM",
+        "Personal Computer",
+        "5150",
+        "Intel 8088",
+        "open architecture"
+      ],
+      "category": "Computing",
+      "identification_number": "IBM-PC-5150-SYS-001-1981-US",
+      "tables": [
+        {
+          "title": "Event Timeline",
+          "data": [
+            {
+              "Event": "Initial Release",
+              "Date": "August",
+              "Year": "1981"
+            },
+            {
+              "Event": "Peak Sales Period",
+              "Date": "",
+              "Year": "1982-1984"
+            },
+            {
+              "Event": "Final Units Shipped",
+              "Date": "April",
+              "Year": "1987"
+            },
+            {
+              "Event": "Official Discontinuation",
+              "Date": "",
+              "Year": "1987"
+            }
+          ]
+        }
+      ],
+      "year_start": 1981,
+      "year_end": 1987
+    }
+  },
+  {
+    "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "model_name": "Llama 4 Scout",
+    "success": true,
+    "extraction": {
+      "category": "Computer",
+      "identification_number": "IBM-PC-5150-SYS-001-1981-US",
+      "keywords": [
+        "IBM Personal Computer",
+        "model 5150",
+        "Intel 8088 processor",
+        "CGA graphics",
+        "floppy disk drives",
+        "expansion slots"
+      ],
+      "name": "IBM Personal Computer model 5150",
+      "summary": "The IBM Personal Computer, model 5150, launched in 1981, revolutionized the computing industry with its Intel 8088 processor, open architecture, and modular design.",
+      "tables": [
+        {
+          "data": [
+            [
+              "Initial Release",
+              "August",
+              1981
+            ],
+            [
+              "Peak Sales Period",
+              "",
+              "1982-1984"
+            ],
+            [
+              "Final Units Shipped",
+              "April",
+              1987
+            ],
+            [
+              "Official Discontinuation",
+              "",
+              1987
+            ]
+          ],
+          "title": "Key Dates"
+        }
+      ],
+      "year_end": 1987,
+      "year_start": 1981
+    }
+  }
+]
