@@ -1,0 +1,117 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Exact product name or model designation."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 0,
+      "maxItems": 6,
+      "description": "Common alternative names (e.g., 'IBM PC', '5150')."
+    },
+    "release_year": {
+      "anyOf": [{ "type": "integer" }, { "type": "null" }],
+      "description": "Four-digit release year if known; otherwise null."
+    },
+    "manufacturer": {
+      "anyOf": [{ "type": "string" }, { "type": "null" }],
+      "description": "Company that manufactured/released the computer; null if unknown."
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3,
+      "maxItems": 7,
+      "description": "3–7 topical terms directly related to this product."
+    },
+    "tech_specs": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string" },
+          "value": {
+            "anyOf": [
+              { "type": "string" },
+              { "type": "number" },
+              { "type": "array", "items": { "type": "string" } }
+            ]
+          }
+        },
+        "required": ["key", "value"]
+      },
+      "description": "List of spec entries as key–value pairs. Use arrays for multi-values."
+    },
+
+    "description": {
+      "type": "string",
+      "minLength": 200,
+      "maxLength": 2000,
+      "description": "Main factual text about this exact product (aim ~150–200 words). Exclude rivals/variants."
+    },
+    "hallmark": {
+      "type": "string",
+      "maxLength": 160,
+      "description": "Defining feature or quality that made the product distinctive or memorable."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 300,
+      "description": "Objective 1–2 sentence factual summary; no opinions."
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "type": "string",
+            "enum": ["name", "release_year", "manufacturer", "hallmark"]
+          },
+          "quote": {
+            "anyOf": [
+              { "type": "string", "maxLength": 120 },
+              { "type": "null" }
+            ]
+          }
+        },
+        "required": ["field", "quote"]
+      },
+      "description": "At least one item naming the field it supports with a short source quote or null."
+    },
+
+    "target_entity": {
+      "type": "string",
+      "description": "Canonical name of the main product selected on multi-entity pages."
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 5,
+      "description": "Optional notes like 'rival models mentioned; trimmed'."
+    }
+  },
+  "required": [
+    "name",
+    "aliases",
+    "release_year",
+    "manufacturer",
+    "keywords",
+    "tech_specs",
+    "description",
+    "hallmark",
+    "summary",
+    "evidence",
+    "target_entity",
+    "warnings"
+  ]
+}
