@@ -14,3 +14,8 @@ venv/
 
 # Project specific
 .chroma/
+scraper/
+articles/
+
+# Evaluation cache (regeneratable)
+chroma_db/
