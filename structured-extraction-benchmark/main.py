@@ -85,6 +85,11 @@ def main():
         help="Model to use for extraction (default: gpt-oss-120b)",
     )
     parser.add_argument("--title", "-t", required=True, help="Title of the computer to extract from data.json")
+    parser.add_argument(
+        "--output-dir",
+        "-o",
+        help="Override output directory (default: output/{model})",
+    )
 
     args = parser.parse_args()
 
@@ -107,13 +112,15 @@ def main():
         extraction = extract_computer_info(content, args.model, schema)
 
         # Create output directory
-        output_dir = Path(__file__).parent / "output"
-        output_dir.mkdir(exist_ok=True)
+        if args.output_dir:
+            output_dir = Path(__file__).parent / args.output_dir
+        else:
+            output_dir = Path(__file__).parent / "output" / args.model
+        output_dir.mkdir(parents=True, exist_ok=True)
 
         # Generate output filename
         computer_name = sanitize_filename(extraction.get("name", "unknown"))
-        model_short = args.model.replace("-", "_")
-        output_filename = f"{computer_name}_{model_short}.json"
+        output_filename = f"{computer_name}.json"
         output_path = output_dir / output_filename
 
         # Save result
